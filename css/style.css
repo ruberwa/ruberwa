@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;600;700&display=swap');
+
+/**
+*  !============================================ NAV STYLE
+*/
+:root {
+
+    --me_gray: #f4f4f4;
+    --eerie: #1c1c1c;
+    --me_white: #fff;
+    --tripleSeven: #777;
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --light-slate: #a8b2d1;
+    --slate: #8892b0;
+    --clr-biege: #f9f4da;
+    --clr-blue: #12b5e5;
+    --clr-orange: #fc7428;
+    --clr-red: #ed203d;
+    --clr-green: #0ba95b;
+
+    --scroll-padding: 4.2rem;
+    --chivo-mono: 'Chivo Mono', monospace;
+
+    /* SIZES */
+    --SIZE8: 8rem;
+    --SIZE6: 6rem;
+    --SIZE4: 4rem;
+    --SIZE5: 5rem;
+    --SIZE3: 3rem;
+    --SIZE2-6: 2.6rem;
+    --SIZE2: 2rem;
+    --SIZE1-8: 1.8rem;
+    --SIZE1-6: 1.6rem;
+    --SIZE1-4: 1.4rem;
+    --SIZE1: 1rem;
+    --SIZE0-7: 0.7rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--chivo-mono);
+    font-size: var(--TINNY-SIZE);
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+
+
+/**
+* !============================================ NAV STYLE
+*/
+.header_nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--navy);
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+.header_nav ul li {
+    display: inline-block;
+}
+.header_nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--slate);
+    font-size: var(--SIZE2);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header_nav ul li.active {
+    background-color: var(--light-navy);
+    transition: 0.3s ease background-color;
+}
+.header_nav ul li.active a {
+    color: rgb(255, 255, 255);
+}
