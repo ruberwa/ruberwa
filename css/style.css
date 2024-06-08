@@ -681,3 +681,25 @@ max-width:480px),
     }
 
 }
+
+
+/**
+* !============================================ FOOTER STYLE
+*/
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: var(--SIZE3) 0;
+    font-size: var(--SIZE1-6);
+    background-color: var(--dark-navy);
+    color: var(--slate);
+    padding: var(--SIZE1) 0;
+  }
+
+
+/**
+* TODO:======================================== FOOTER MEDIA
+*/
+@media(max-width:480px),
+(max-width:768px) {}
+
