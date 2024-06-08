@@ -228,3 +228,98 @@ section {
         font-size: var(--SIZE2);
     }
 }
+
+
+/**
+* !============================================ ABOUT STYLE
+*/
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: var(--SIZE3) 0;
+}
+
+.let_about_card_title {
+    font-size: var(--SIZE4);
+    font-weight: 700;
+    color: var(--eerie);
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.about_message {
+    text-align: justify;
+    padding: var(--SIZE2);
+    border-radius: var(--SIZE1);
+    border: 1px solid var(--tripleSeven);
+    background-color: var(--reactNav);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: var(--SIZE3) 0;
+    background-color: var(--navy);
+}
+
+.about_images img {
+    border: 1px solid var(--tripleSeven);
+    padding: var(--SIZE1);
+    border-radius: 10px;
+}
+.about_right_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_socilaMedia {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.githubIcon {
+    color: var(--eerie);
+}
+
+.linkedinIcon {
+    color: #0072b1;
+}
+
+.emailIcon {
+    color: var(--clr-red);
+}
+
+.twitterIcon {
+    color: rgb(29 161 242);
+}
+
+.mapIcon {
+    color: var(--clr-orange);
+}
+
+/**
+* TODO:======================================== ABOUT MEDIA
+*/
+
+@media(max-width:480px),
+(max-width:768px) {
+
+    .about_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .let_about_card_title {
+        font-size: var(--SIZE2);
+    }
+
+    .about_message {
+        text-align: justify;
+    }
+
+    .about_images img {
+        max-width: 100%;
+    }
+}
